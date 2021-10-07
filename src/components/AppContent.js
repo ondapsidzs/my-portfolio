@@ -15,6 +15,7 @@ import AboutMe from "./AboutMe";
 import Filipino from "./Filipino";
 import GraphicDesign from "./GraphicDesign";
 import WebDesign from "./WebDesign";
+import WebDevelopment from "./WebDevelopment";
 import Learner from "./Learner";
 import Dreamer from "./Dreamer";
 import Listener from "./Listener";
@@ -26,6 +27,7 @@ const AppContent = ({ appContentActive, viewImage, viewWebDesign }) => {
   const [filipinoActive, setFilipinoActive] = useState(false);
   const [graphicDesignActive, setGraphicDesignActive] = useState(false);
   const [webDesignActive, setWebDesignActive] = useState(false);
+  const [webDevelopmentActive, setWebDevelopmentActive] = useState(false);
   const [learnerActive, setLearnerActive] = useState(false);
   const [dreamerActive, setDreamerActive] = useState(false);
   const [listenerActive, setListenerActive] = useState(false);
@@ -50,6 +52,11 @@ const AppContent = ({ appContentActive, viewImage, viewWebDesign }) => {
   function webDesignHandler() {
     disableAllHandler();
     setWebDesignActive(!webDesignActive);
+  }
+
+  function webDevelopmentHandler() {
+    disableAllHandler();
+    setWebDevelopmentActive(!webDevelopmentActive);
   }
 
   function learnerHandler() {
@@ -87,6 +94,7 @@ const AppContent = ({ appContentActive, viewImage, viewWebDesign }) => {
     setListenerActive(false);
     setGamerActive(false);
     setBlankActive(false);
+    setWebDevelopmentActive(false);
   }
 
   return (
@@ -112,9 +120,10 @@ const AppContent = ({ appContentActive, viewImage, viewWebDesign }) => {
         </div>
         <WebDesign isActive={webDesignActive} viewWebDesign={viewWebDesign} />
         <div className="nw">
-          i am <span>a Web Developer.</span>
+          i am <span onClick={webDevelopmentHandler}>a Web Developer.</span>
           <LeftArrow className="gold" />
         </div>
+        <WebDevelopment isActive={webDevelopmentActive} />
         <div className="nw">
           i am <span onClick={learnerHandler}>a Learner.</span>
         </div>
