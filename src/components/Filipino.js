@@ -7,9 +7,9 @@ import {
   Humba,
   Lechon,
 } from "./styles/Filipino.styled";
-import CebuImage from "../images/cebu.jpg";
-import HumbaImage from "../images/humba.jpg";
-import LechonImage from "../images/lechon.jpg";
+import CebuImage from "../images/compressed-jpg/cebu.jpg";
+import HumbaImage from "../images/compressed-jpg//humba.jpg";
+import LechonImage from "../images/compressed-jpg//lechon.jpg";
 
 const Filipino = ({ filipinoActive }) => {
   return (

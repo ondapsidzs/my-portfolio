@@ -2,7 +2,7 @@ import React from "react";
 
 import { Container, Content } from "./styles/AboutMe.styled";
 
-import MyPicture from "../images/me.JPG";
+import MyPicture from "../images/compressed-jpg/me.jpg";
 
 const AboutMe = ({ aboutMeActive }) => {
   return (

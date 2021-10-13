@@ -6,6 +6,14 @@ import { AiFillInstagram, AiFillGoogleCircle } from "react-icons/ai";
 
 export const Container = styled.div`
   padding: 100px 0;
+  .noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 `;
 export const Content = styled.div`
   font-size: 3.15rem;
@@ -38,6 +46,11 @@ export const Content = styled.div`
       width: 0;
       background: black;
       transition: 0.2s all ease-in-out;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        height: 2px;
+      }
     }
 
     &:hover {

@@ -7,14 +7,14 @@ import {
   WebDesigns,
 } from "./styles/WebDesign.styled";
 
-import WebDesign1 from "../images/web-design-1.png";
-import WebDesign2 from "../images/web-design-2.png";
-import WebDesign4 from "../images/web-design-4.png";
-import WebDesign5 from "../images/web-design-5.png";
-import WebDesign6 from "../images/web-design-6.png";
-import WebDesign7 from "../images/web-design-7.png";
-import WebDesign8 from "../images/web-design-8.png";
-import WebDesign9 from "../images/web-design-9.png";
+import WebDesign1 from "../images/compressed-jpg//web-design-1.jpg";
+import WebDesign2 from "../images/compressed-jpg//web-design-2.jpg";
+import WebDesign4 from "../images/compressed-jpg//web-design-4.jpg";
+import WebDesign5 from "../images/compressed-jpg//web-design-5.jpg";
+import WebDesign6 from "../images/compressed-jpg//web-design-6.jpg";
+import WebDesign7 from "../images/compressed-jpg//web-design-7.jpg";
+import WebDesign8 from "../images/compressed-jpg//web-design-8.jpg";
+import WebDesign9 from "../images/compressed-jpg//web-design-9.jpg";
 
 const WebDesign = ({ isActive, viewWebDesign }) => {
   return (

@@ -2,13 +2,13 @@ import React from "react";
 
 import { Container, Content, Grid } from "./styles/WebDevelopment.styles";
 
-import Image1 from "../images/web-development-1.png";
-import Image2 from "../images/web-development-2.png";
-import Image3 from "../images/web-development-3.png";
-import Image4 from "../images/web-development-4.png";
-import Image5 from "../images/web-development-5.png";
-import Image6 from "../images/web-development-6.png";
-import Image7 from "../images/web-development-7.png";
+import Image1 from "../images/compressed-jpg//web-development-1.jpg";
+import Image2 from "../images/compressed-jpg//web-development-2.jpg";
+import Image3 from "../images/compressed-jpg//web-development-3.jpg";
+import Image4 from "../images/compressed-jpg//web-development-4.jpg";
+import Image5 from "../images/compressed-jpg//web-development-5.jpg";
+import Image6 from "../images/compressed-jpg//web-development-6.jpg";
+import Image7 from "../images/compressed-jpg//web-development-7.jpg";
 
 const WebDevelopment = ({ isActive }) => {
   return (
