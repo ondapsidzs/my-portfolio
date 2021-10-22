@@ -13,6 +13,10 @@ export const Container = styled.div`
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    &:first-of-type {
+      position: relative;
+    }
   }
 `;
 export const Content = styled.div`
@@ -47,7 +51,7 @@ export const Content = styled.div`
       background: black;
       transition: 0.2s all ease-in-out;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1028px) {
         width: 100%;
         height: 2px;
       }

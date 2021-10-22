@@ -9,7 +9,7 @@ export const Container = styled.div`
   width: 700px;
   border: ${({ isActive }) => (isActive ? "1px solid black" : "0 solid black")};
   border-radius: 10px;
-  transition: 0.3s height ease-in-out, 0.2s padding ease-in-out,
+  transition: 0.5s height ease-in-out, 0.2s padding ease-in-out,
     0.1s border ease-in-out, 0.2s margin ease-in-out;
   overflow: hidden;
 

@@ -21,6 +21,7 @@ import Dreamer from "./Dreamer";
 import Listener from "./Listener";
 import Gamer from "./Gamer";
 import Blank from "./Blank";
+import ClickMe from "./ClickMe";
 
 const AppContent = ({ appContentActive, viewImage, viewWebDesign }) => {
   const [aboutMeActive, setAboutMeActive] = useState(false);
@@ -104,6 +105,7 @@ const AppContent = ({ appContentActive, viewImage, viewWebDesign }) => {
         <div className="nw">
           i am{" "}
           <span onClick={sidneyOndapHandler} className="noselect">
+            <ClickMe id="popUp" />
             Sidney Ondap.
           </span>
         </div>
@@ -190,9 +192,9 @@ const AppContent = ({ appContentActive, viewImage, viewWebDesign }) => {
           <a href="https://www.linkedin.com/in/sidney-ondap-467b57222?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BSrQYVvdOTLeUrWSjaDqhYg%3D%3D">
             <LinkedIn />
           </a>
-          <a href="/">
+          {/* <a href="/">
             <Google />
-          </a>
+          </a> */}
         </div>
       </Contact>
     </Container>

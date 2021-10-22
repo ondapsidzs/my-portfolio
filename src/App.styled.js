@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
 export const LogoIcon = styled.img`
-  position: absolute;
+  z-index: 1000;
+  position: fixed;
   top: 50px;
-  left: 5%;
+  right: 5%;
   height: 100px;
   width: 100px;
   cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  transition-property: opacity;
+  transform: rotate(90deg);
 
   @media screen and (max-width: 1200px) {
     top: 20px;
@@ -37,8 +41,7 @@ export const AnimatedContent = styled.div`
   top: 50%;
   transform: translateY(-50%);
   height: 4rem;
-  width: calc(100% - (2 * 20%));
-  width: 700px;
+  width: 100%;
   overflow-y: hidden;
 
   > div {

@@ -92,14 +92,22 @@ function App() {
     setViewWebDesignActive(false);
   }
 
+  window.addEventListener("scroll", () => {
+    if (appContentActive) {
+      let logoElement = document.querySelector("#logo");
+
+      if (window.scrollY > 0 || document.body.scrollTop > 0) {
+        logoElement.style.opacity = 0.2;
+      } else {
+        logoElement.style.opacity = 1;
+      }
+    }
+  });
+
   return (
     <>
       <Container>
-        <LogoIcon
-          src={Logo}
-          alt=""
-          style={{ rotate: "90deg", position: "fixed" }}
-        />
+        <LogoIcon src={Logo} alt="" id="logo" />
         <Content>
           <AnimatedContent id="animatedContent">
             <div>
